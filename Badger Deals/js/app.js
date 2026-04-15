@@ -13,3 +13,13 @@ function calculateSavings() {
   document.getElementById('result').innerText =
     `You save $${savings.toFixed(2)}. Final price: $${finalPrice.toFixed(2)}`;
 }
+
+document.querySelectorAll('.deal-toggle').forEach((button) => {
+  button.addEventListener('click', () => {
+    const card = button.closest('.deal-card');
+
+    if (card) {
+      card.classList.toggle('is-flipped');
+    }
+  });
+});

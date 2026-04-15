@@ -9,7 +9,7 @@
 </head>
 <body class="home-page">
 
-<header class="bg-danger text-white p-3">
+<header class="site-header p-3">
   <h1>BadgerDeals</h1>
   <nav>
     <a href="index.html">Home</a>
@@ -21,29 +21,37 @@
 
 <main class="container mt-4">
   <section>
-    <h2>Welcome</h2>
-    <p>Your hub for UW-Madison student deals, discounts, and events.</p>
+    <div class="text-frost">
+      <h2>Welcome</h2>
+      <p>Your hub for UW-Madison student deals, discounts, and events.</p>
+    </div>
   </section>
 
   <section class="row">
     <a class="col-md-6 card p-3 feature-card-link" href="deals.html">
-      <h3>Find Deals</h3>
-      <p>Browse discounts on food, merchandise, and more.</p>
+      <div class="text-frost">
+        <h3>Find Deals</h3>
+        <p>Browse discounts on food, merchandise, and more.</p>
+      </div>
     </a>
 
     <a class="col-md-6 card p-3 feature-card-link" href="events.html">
-      <h3>Campus Events</h3>
-      <p>Discover events offering free items and promotions.</p>
+      <div class="text-frost">
+        <h3>Campus Events</h3>
+        <p>Discover events offering free items and promotions.</p>
+      </div>
     </a>
   </section>
 
   <section class="mt-4">
-    <h2>Quick Savings Calculator</h2>
+    <div class="text-frost text-frost-block">
+      <h2>Quick Savings Calculator</h2>
+    </div>
 
-    <label for="price">Original Price ($):</label>
+    <label class="text-frost text-frost-label" for="price">Original Price ($):</label>
     <input id="price" type="number" class="form-control">
 
-    <label for="discount">Discount (%):</label>
+    <label class="text-frost text-frost-label" for="discount">Discount (%):</label>
     <input id="discount" type="number" class="form-control">
 
     <button class="btn btn-danger mt-2" onclick="calculateSavings()">Calculate</button>
