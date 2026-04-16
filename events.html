@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="deals-page">
+    <header class="site-header p-3">
+      <h1>Events</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="deals.html">Deals</a>
+        <a href="events.html">Events</a>
+        <a href="about.html">About</a>
+      </nav>
+    </header>
+
+    <main class="container py-4">
+      <section class="deals-hero">
+        <div>
+          <h2>Browse upcoming campus events in one place.</h2>
+          <p class="section-subtitle">
+            Find student events, social opportunities, and campus happenings
+            worth showing up for.
+          </p>
+        </div>
+        <div class="deals-summary">
+          <span class="summary-pill">Upcoming events</span>
+        </div>
+      </section>
+
+      <section class="deals-toolbar">
+        <div class="row g-3 align-items-end">
+          <div class="col-lg-4">
+            <label class="form-label" for="event-search">Search events</label>
+            <input
+              id="event-search"
+              type="search"
+              class="form-control"
+              placeholder="Career fair, concert, free food..."
+            />
+          </div>
+          <div class="col-md-6 col-lg-2">
+            <label class="form-label" for="event-category">Category</label>
+            <select id="event-category" class="form-select">
+              <option>All categories</option>
+              <option>Academic</option>
+              <option>Career</option>
+              <option>Social</option>
+              <option>Sports</option>
+              <option>Arts & Music</option>
+              <option>Free Food</option>
+            </select>
+          </div>
+          <div class="col-md-6 col-lg-2">
+            <label class="form-label" for="event-type">Event type</label>
+            <select id="event-type" class="form-select">
+              <option>Any type</option>
+              <option>Free</option>
+              <option>Ticketed</option>
+              <option>Student org</option>
+              <option>Drop-in</option>
+            </select>
+          </div>
+          <div class="col-md-6 col-lg-2">
+            <label class="form-label" for="event-sort">Sort by</label>
+            <select id="event-sort" class="form-select">
+              <option>Soonest</option>
+              <option>Most popular</option>
+              <option>Newest</option>
+            </select>
+          </div>
+        </div>
+      </section>
+
+      <section class="deals-grid">
+        <article class="deal-card">
+          <div class="deal-card-inner">
+            <div class="deal-face deal-front">
+              <div class="deal-meta">
+                <span class="deal-badge">Social</span>
+                <span class="deal-expiry">This week</span>
+              </div>
+              <h3>Student Org Fair</h3>
+              <p class="deal-location">Library Mall</p>
+              <div class="deal-footer">
+                <span class="deal-value">Free</span>
+                <button class="deal-link deal-toggle" type="button">
+                  View details
+                </button>
+              </div>
+            </div>
+            <div class="deal-face deal-back">
+              <p>
+                Meet student organizations, explore campus communities, and find
+                new groups to join.
+              </p>
+              <ul class="deal-details-list">
+                <li>Date and time to be announced</li>
+                <li>Good for meeting people and getting involved</li>
+                <li>More event details will be added later</li>
+              </ul>
+              <button class="deal-link deal-toggle" type="button">
+                Back to summary
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="deal-card">
+          <div class="deal-card-inner">
+            <div class="deal-face deal-front">
+              <div class="deal-meta">
+                <span class="deal-badge">Career</span>
+                <span class="deal-expiry">Coming soon</span>
+              </div>
+              <h3>Internship & Career Expo</h3>
+              <p class="deal-location">Kohl Center</p>
+              <div class="deal-footer">
+                <span class="deal-value">Free</span>
+                <button class="deal-link deal-toggle" type="button">
+                  View details
+                </button>
+              </div>
+            </div>
+            <div class="deal-face deal-back">
+              <p>
+                Connect with employers, explore internships, and learn about
+                upcoming career opportunities.
+              </p>
+              <ul class="deal-details-list">
+                <li>Resume-friendly event for students</li>
+                <li>Professional dress may be recommended</li>
+                <li>More event details will be added later</li>
+              </ul>
+              <button class="deal-link deal-toggle" type="button">
+                Back to summary
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="deal-card">
+          <div class="deal-card-inner">
+            <div class="deal-face deal-front">
+              <div class="deal-meta">
+                <span class="deal-badge">Free Food</span>
+                <span class="deal-expiry">Tomorrow</span>
+              </div>
+              <h3>Late-Night Study Break</h3>
+              <p class="deal-location">Residence Hall Commons</p>
+              <div class="deal-footer">
+                <span class="deal-value">Free</span>
+                <button class="deal-link deal-toggle" type="button">
+                  View details
+                </button>
+              </div>
+            </div>
+            <div class="deal-face deal-back">
+              <p>
+                A casual campus event with snacks, study-break energy, and a
+                chance to reset during a busy week.
+              </p>
+              <ul class="deal-details-list">
+                <li>Expected to include free food or refreshments</li>
+                <li>Open to students</li>
+                <li>More event details will be added later</li>
+              </ul>
+              <button class="deal-link deal-toggle" type="button">
+                Back to summary
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="deal-card">
+          <div class="deal-card-inner">
+            <div class="deal-face deal-front">
+              <div class="deal-meta">
+                <span class="deal-badge">Arts & Music</span>
+                <span class="deal-expiry">This weekend</span>
+              </div>
+              <h3>Campus Music Night</h3>
+              <p class="deal-location">Memorial Union Terrace</p>
+              <div class="deal-footer">
+                <span class="deal-value">Free</span>
+                <button class="deal-link deal-toggle" type="button">
+                  View details
+                </button>
+              </div>
+            </div>
+            <div class="deal-face deal-back">
+              <p>
+                An outdoor campus event featuring live music, a relaxed setting,
+                and a strong student turnout.
+              </p>
+              <ul class="deal-details-list">
+                <li>Great social event near the lake</li>
+                <li>Open to students and guests</li>
+                <li>More event details will be added later</li>
+              </ul>
+              <button class="deal-link deal-toggle" type="button">
+                Back to summary
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="deal-card">
+          <div class="deal-card-inner">
+            <div class="deal-face deal-front">
+              <div class="deal-meta">
+                <span class="deal-badge">Academic</span>
+                <span class="deal-expiry">This week</span>
+              </div>
+              <h3>Guest Speaker Talk</h3>
+              <p class="deal-location">Vilas Hall</p>
+              <div class="deal-footer">
+                <span class="deal-value">Free</span>
+                <button class="deal-link deal-toggle" type="button">
+                  View details
+                </button>
+              </div>
+            </div>
+            <div class="deal-face deal-back">
+              <p>
+                A campus talk focused on current ideas, research, or industry
+                topics relevant to students.
+              </p>
+              <ul class="deal-details-list">
+                <li>Useful for academic and professional growth</li>
+                <li>Likely open seating</li>
+                <li>More event details will be added later</li>
+              </ul>
+              <button class="deal-link deal-toggle" type="button">
+                Back to summary
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="deal-card">
+          <div class="deal-card-inner">
+            <div class="deal-face deal-front">
+              <div class="deal-meta">
+                <span class="deal-badge">Sports</span>
+                <span class="deal-expiry">Next game</span>
+              </div>
+              <h3>Badger Game Day</h3>
+              <p class="deal-location">Camp Randall</p>
+              <div class="deal-footer">
+                <span class="deal-value">Ticketed</span>
+                <button class="deal-link deal-toggle" type="button">
+                  View details
+                </button>
+              </div>
+            </div>
+            <div class="deal-face deal-back">
+              <p>
+                A major campus sports event with student-section energy,
+                traditions, and strong turnout.
+              </p>
+              <ul class="deal-details-list">
+                <li>Student ticket may be required</li>
+                <li>Arrive early for the best experience</li>
+                <li>More event details will be added later</li>
+              </ul>
+              <button class="deal-link deal-toggle" type="button">
+                Back to summary
+              </button>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <p class="footer-brand">BadgerDeals</p>
+        <p class="footer-copy">
+          &copy; 2026 BadgerDeals. Student savings, campus-wide.
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
